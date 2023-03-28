@@ -16,4 +16,14 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
+    .hero-text {
+        font-size: 56px;
+    }
+
+    .wrapper {
+        padding: 188px 472px;
+        max-width: 1440px;
+        max-height: 600px;
+    }
 }

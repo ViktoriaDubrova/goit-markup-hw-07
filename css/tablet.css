@@ -13,6 +13,13 @@
         padding-bottom: 96px;
     }
 
+    .hero-text {
+        font-size: 56px;
+    }
+
+    .wrapper {
+        padding: 112px 136px;
+    }
 
 }
 
