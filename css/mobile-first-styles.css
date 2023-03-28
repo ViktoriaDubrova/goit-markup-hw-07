@@ -78,12 +78,6 @@ a, li {
     /* outline: 2px solid white; */
 }
 
-@media screen and (min-width: 480px) {
-    .container {
-        max-width: 426px;
-    }
-}
-
 .section {
     padding: 120px 0;
 }
@@ -201,7 +195,7 @@ a, li {
 
 /* --- HERO SECTION ---  */
 .wrapper {
-    padding: 112px 54px;
+    padding: 188px 472px;
     background-color: #434455;
     background-image:  linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -234,7 +228,7 @@ a, li {
     margin-bottom: 48px;
     max-width: 496px;
     text-align: center;  
-    font-size: 36px;
+    font-size: 56px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--color-text);
@@ -364,9 +358,10 @@ a, li {
 
 /* ---  EMPLOYEES SECTION  --- */
 .employees-section {
+    /* width: 100%; */
     background-color: var(--bg-btn-foot-color);
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .empl-content-p {
@@ -433,8 +428,8 @@ a, li {
 /* ---  Customers SECTION  --- */
 .customers-section {
     width: 100%;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .customers-list {
