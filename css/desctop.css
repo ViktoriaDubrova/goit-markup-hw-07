@@ -3,6 +3,34 @@
         max-width: 1158px;
     }
 
+    .about-item::before {
+        display: block;
+        content: "";
+    
+        height: 112px;
+        background: #F4F4FD;
+        border-radius: 4px;
+        background-position: center;
+        background-repeat: no-repeat;
+            /* outline: 1px solid red; */
+    }
+    
+    .about-item:nth-child(1)::before {
+        background-image: url(../images/icons.svg/optimize/antenna.svg);
+    }
+    
+    .about-item:nth-child(2)::before {
+        background-image: url(../images/icons.svg/optimize/clock.svg);
+    }
+    
+    .about-item:nth-child(3)::before {
+        background-image: url(../images/icons.svg/optimize/diagram.svg);
+    }
+    
+    .about-item:nth-child(4)::before {
+        background-image: url(../images/icons.svg/optimize/astronaut.svg);
+    }
+    
     .employees-section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -12,18 +40,33 @@
         width: calc((100%-72px) / 4);
     }
 
-    .customers-section {
-        padding-top: 120px;
-        padding-bottom: 120px;
+    .about-item {
+        width: calc((100%-72px) / 4);
+    }
+
+    .wrapper {
+        /* padding: 188px 472px; */
+        max-width: 1440px;
+        max-height: 600px;
+        background-image:  linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+         ),
+           url(../images/peopleoffice.jpg);
     }
 
     .hero-text {
         font-size: 56px;
     }
 
-    .wrapper {
-        padding: 188px 472px;
-        max-width: 1440px;
-        max-height: 600px;
+    .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
+
+
+
+
+
+
 }

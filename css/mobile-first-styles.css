@@ -195,13 +195,14 @@ a, li {
 
 /* --- HERO SECTION ---  */
 .wrapper {
-    padding: 188px 472px;
+    padding: 122px 54px 240px 54px;
+    
     background-color: #434455;
     background-image:  linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
      ),
-       url(../images/peopleoffice.jpg);
+       url(../images/Dark-bg-mobile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,7 +229,7 @@ a, li {
     margin-bottom: 48px;
     max-width: 496px;
     text-align: center;  
-    font-size: 56px;
+    font-size: 30px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--color-text);
@@ -264,42 +265,17 @@ a, li {
 }
   
 .about-list {
+
     display: flex;
     gap: 24px;
 }
 
 .about-item {
-    width: calc((100%-72px) / 4);
-
+    width: 100%;
 }
 
-.about-item::before {
-    display: block;
-    content: "";
 
-    height: 112px;
-    background: #F4F4FD;
-    border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-        /* outline: 1px solid red; */
-}
 
-.about-item:nth-child(1)::before {
-    background-image: url(../images/icons.svg/optimize/antenna.svg);
-}
-
-.about-item:nth-child(2)::before {
-    background-image: url(../images/icons.svg/optimize/clock.svg);
-}
-
-.about-item:nth-child(3)::before {
-    background-image: url(../images/icons.svg/optimize/diagram.svg);
-}
-
-.about-item:nth-child(4)::before {
-    background-image: url(../images/icons.svg/optimize/astronaut.svg);
-}
 
 .about-name {
     color: var(--brand-color);
@@ -816,9 +792,9 @@ margin-bottom: 16px;
     margin-bottom: 8px;
 }
 
-.for-label:last-child {
+.for-label:nth-child(4) { 
     margin-bottom: 0;
-  }
+}
   
 .footer-label {
     border-color: #FFFFFF;

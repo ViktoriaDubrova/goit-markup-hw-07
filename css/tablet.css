@@ -8,23 +8,34 @@
         padding-bottom: 96px;
     }
 
-    .customers-section {
+    .about {
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+    .about-item {
+        width: 356px;
+    }
+
+    .wrapper {
+        padding: 112px 136px;
+        background-image:  linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+         ),
+           url(../images/Dark-bg-tab.jpg);
     }
 
     .hero-text {
         font-size: 56px;
     }
 
-    .wrapper {
-        padding: 112px 136px;
+    .customers-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
+
+
+
 
 }
 
-@media screen and (min-width: 768px), (max-width: 1199px) {
-    .container-sm {
-        width: 552px;
-    }
-}

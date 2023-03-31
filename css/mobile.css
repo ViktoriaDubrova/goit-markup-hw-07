@@ -1,22 +1,23 @@
 @media screen and (min-width: 480px) {
     .container {
-        max-width: 426px;
-    }
-
-    .hero-text {
-        font-size: 36px;
+        max-width: 428px;
     }
 
     .employees-section {
-        padding: 96px 82px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    
+    .about {
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .wrapper {
-        padding: 112px 54px;
+        padding: 122px 54px 240px 54px;
     }
 
-    .customers-section {
-        padding-top: 96px;
-        padding-bottom: 96px;
+    .hero-text {  
+        font-size: 36px;
     }
 }
