@@ -212,6 +212,18 @@ a, li {
     margin-right: auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .wrapper {
+        background-image:  linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+         ),
+           url(../images/Dark-bg-mobile-2x.jpg);
+    }
+}
+
 .hero-container {
     padding-left: 0;
     padding-right: 0;
