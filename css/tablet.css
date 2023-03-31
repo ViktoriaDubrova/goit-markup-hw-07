@@ -41,6 +41,24 @@
         font-size: 56px;
     }
 
+    .header-list {
+        margin-left: 76px;
+        display: flex;
+        flex-direction: row;    
+        gap: 40px;   
+    }
+ 
+    .header-item {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .header-contact {
+        display: flex;
+        margin-left: auto;
+        gap: 40px;   
+    }
+    
     .customers-section {
         padding-top: 96px;
         padding-bottom: 96px;

@@ -136,14 +136,14 @@ a, li {
 }
 
 /* --- HEADER ---  */
-.header-list {
+/* .header-list {
     margin-left: 76px;
     display: flex;
     flex-direction: row;    
     gap: 40px;   
-}
+} */
 
-.header-item {
+/* .header-item {
     list-style: none;
     text-decoration: none;
 }
@@ -152,7 +152,7 @@ a, li {
     display: flex;
     margin-left: auto;
     gap: 40px;   
-}
+} */
 
 .contact-item:not(:first-child) {
     margin-left: 40px;
@@ -191,6 +191,38 @@ a, li {
 
 .mail-tel:hover {
     color: var(--color-link);
+}
+
+.header-nav-wrap {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 40px;
+    padding-top: 80px;
+}
+
+.header-btn-mobile-close {
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+}
+
+.header-btn-mobile-close:hover,
+.header-btn-mobile-close:focus {
+    background-color: var(--ocean);
 }
 
 /* --- HERO SECTION ---  */

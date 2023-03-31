@@ -71,6 +71,13 @@
         font-size: 56px;
     }
 
+    .header-list {
+        margin-left: 76px;
+        display: flex;
+        flex-direction: row;    
+        gap: 40px;   
+    }
+    
     .customers-section {
         padding-top: 120px;
         padding-bottom: 120px;
