@@ -143,33 +143,43 @@ a, li {
     gap: 40px;   
 } */
 
-/* .header-item {
+.header-item {
     list-style: none;
     text-decoration: none;
+
+}
+
+.header-item:not(:last-child) {    
+    margin-bottom: 40px;
 }
 
 .header-contact {
     display: flex;
     margin-left: auto;
     gap: 40px;   
-} */
+}
 
 .contact-item:not(:first-child) {
     margin-left: 40px;
 }
 
 .item-nav {
-    position: relative;
+    /* position: relative; */
+    font-size: 36px;
+    line-height: 40px;
     font-weight: 500;
     list-style: none;
     padding: 24px 0;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
 }
 
 .item-nav.active {
     color: var(--ocean);
 }
 
-.item-nav.active::after {
+/* .item-nav.active::after {
     content: "";
 
     position: absolute;
@@ -179,7 +189,7 @@ a, li {
     background-color: var(--ocean);
     border-radius: 2px;
     bottom: -3px;
-}
+} */
 
 .mail-tel {
     font-style: normal;
