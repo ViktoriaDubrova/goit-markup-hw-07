@@ -1,6 +1,32 @@
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1158px;
+        padding-left: 156px;
+        padding-right: 156px;
+    }
+
+    .section {
+        padding: 120px 0;
+    }
+
+    .about-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .about-name {
+        color: var(--brand-color);
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 8px;
+        line-height: 0.83;
+        letter-spacing: 0.02em;
+        margin-top: 8px;
+    }
+
+    .about-name-text {
+        color: var(--description-tel-mail-color);
+        font-weight: 400;
     }
 
     .about-item::before {
