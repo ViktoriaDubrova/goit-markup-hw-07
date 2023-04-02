@@ -5,66 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
-      <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
  
+    <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+
       <link rel="stylesheet" href="./css/mobile-first-styles.css">
       <link rel="stylesheet" href="./css/mobile.css">
       <link rel="stylesheet" href="./css/tablet.css">
-      <link rel="stylesheet" href="./css/desctop.css">
-  
+      <link rel="stylesheet" href="./css/desctop.css"> 
   </head>
 
   <body>
 <!-------------------- HEADER ------------------------->
      <header class="header">
       <div class="container">
-        <a class="logo logo-link-header" href="./index.html">
+        <nav class="header-navigation">
+         <a class="logo logo-link-header" href="./index.html">
           <span class="logo-color">Web</span>Studio</a>
-          <div class="backdrop is-hidden" data-modal>
-        <button type="button" class="header-btn-mobile">
-          <svg class="modal-close-btn-icon" Width="8" Height="8">
+ 
+          <ul class="header-list list">
+            <li class="header-item">
+                <a class="item-nav link active" href="./index.html">Studio</a>
+            </li>        
+            <li class="header-item">
+                <a  class="item-nav link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+                <a  class="item-nav link" href="">Contacts</a>
+            </li>
+         </ul>
+        </nav>
+
+        <ul class="header-contact list">
+          <li class="contact-item">
+            <a class="mail-tel"
+            href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-item">
+            <a class="mail-tel"
+            href="tel:+110001111111">+11 (000) 111-11-11</a>
+           </li>
+         </ul>
+<!------------------- BURGER MENU --------------------------->
+        <button type="button" 
+                class="header-btn-mobile js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+
+          <svg class="burger-icon-open" width="32" height="22">
             <use href="./images/icons.svg/sprite_symboldefs.svg#icon-charm_menu-hamburger"></use>
           </svg>
         </button>
       </div>
 
-        <div class="header-nav-wrap">
-          <button class="header-btn-mobile-close" type="button" data-modal-close>
-            <svg class="modal-close-btn-icon" Width="8" Height="8">
-              <use href="./images/icons.svg/sprite_symboldefs.svg#icon-close-btn"></use>
-            </svg></button>
-         <nav class="header-navigation">
- 
-         <ul class="header-list list">
-             <li class="header-item">
-                 <a class="item-nav link active" href="./index.html">Studio</a>
-             </li>        
-             <li class="header-item">
-                 <a  class="item-nav link" href="./portfolio.html">Portfolio</a>
-             </li>
-             <li class="header-item">
-                 <a  class="item-nav link" href="">Contacts</a>
-             </li>
-         </ul>
-         </nav>
-           <ul class="header-contact list">
-             <li>
-               <a class="mail-tel"
-               href="mailto:info@devstudio.com">info@devstudio.com</a>
-             </li>
-             <li>
-               <a class="mail-tel"
-               href="tel:+110001111111">+11 (000) 111-11-11</a>
-              </li>
-            </ul>
+			<div class="menu-container js-menu-container" id="mobile-menu">
+				<button class="menu-toggle-close js-close-menu">
+					<svg class="modal-icon" width="8" height="8">
+						<use href="./images/symbol-defs.svg#icon-close-btn"></use>
+					</svg>
+				</button>
 
-            <div class="header-icon">
-            <ul class="team-icon-list list">
+				<nav class="burger-navigation">
+					<ul class="burger-list header-list list">
+            <li class="header-item">
+                <a class="item-nav link active" href="./index.html">Studio</a>
+            </li>        
+            <li class="header-item">
+                <a  class="item-nav link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+                <a  class="item-nav link" href="">Contacts</a>
+            </li>
+         </ul>
+				</nav>
+
+				<ul class="burger-contact list">
+					<li class="burger-contact-item">
+						<a href="tel:+110001111111" class="burger-tel link"
+							>+11 (000) 111-11-11</a
+						>
+					</li>
+					<li class="burger-contact-item">
+						<a href="mailto:info@devstudio.com" class="burger-mail link"
+							>info@devstudio.com</a>
+					</li>
+				</ul>
+
+        <ul class="team-icon-list list">
               <li class="team-sicial-item">
                 <a href="/" class="team-social-link link">
                 <svg class="" width="16" height="16">
@@ -98,23 +131,21 @@
              </li>
           </ul>
         </div>
-
-          </div>
-      </div>
      </header>
     <main>
-<!----------------- HERO SECTION ok---------------------->
+<!----------------- HERO SECTION ---------------------->
       <section class="wrapper">
-       <div class="">
          <div class="container hero-container">
            <h1 class="hero-text">Effective Solutions<br>for Your Business</h1>
-           <button class="hero-button btn hero-text-btn" type="button" data-modal-open>Order Service</button>
+           <button class="hero-button btn hero-text-btn" 
+                   type="button" 
+                   data-modal-open>Order Service
+           </button>
          </div>
-       </div>
       </section>
 <!---------------- ABOUT SECTION ---------------------->
-      <!-- <section class="about section">
-         <div class="container">       
+      <section class="about section">
+         <div class="container about-container">       
            <h2 class="visually-hidden">About us</h2>
            <ul class="list about-list">
              <li class="about-item">
@@ -147,9 +178,9 @@
              </li>
            </ul>
          </div>
-      </section> -->
+      </section>
 <!------------------  WORKING  ------------------------>
-      <!-- <section class="section what-section">
+      <section class="section what-section">
         <div class="container">     
          <h2 class="section-name">What are we doing</h2>
          <ul class="working-list list">
@@ -179,8 +210,8 @@
           </li>
          </ul>
         </div>        
-      </section> -->
-<!--------------- EMPLOYEES SECTION ok------------------->
+      </section>
+<!--------------- EMPLOYEES SECTION ------------------->
       <section class="section employees-section">
         <div class="container">
            <h2 class="section-name">Our Team</h2>
@@ -377,13 +408,16 @@
           </div>
       </section>
 <!--------------- Customers SECTION ------------------->
-      <!-- <section class="section customers-section">
+      <section class="section customers-section">
         <div class="container">
           <h2 class="section-name">Customers</h2>
           <ul class="customers-list list">
 
             <li class="customers-item">
-             <a href="/" class="customers-link link">
+             <a href="/"
+                class="customers-link link"
+                target="_blank"
+								rel="noopener noreferrer nofollow">
                 <svg class="customers-icon" width="41" height="42">
                    <use href="./images/icons.svg/sprite_symboldefs.svg#icon-group"></use>
                 </svg>
@@ -391,7 +425,10 @@
             </li>
 
             <li class="customers-item">
-              <a href="/" class="customers-link link">
+              <a href="/"
+                 class="customers-link link"
+                 target="_blank"
+                 rel="noopener noreferrer nofollow">
                  <svg class="customers-icon" width="40" height="52">
                     <use href="./images/icons.svg/sprite_symboldefs.svg#icon-company"></use>
                  </svg>
@@ -399,7 +436,10 @@
              </li>
 
              <li class="customers-item">
-              <a href="/" class="customers-link link">
+              <a href="/" 
+                 class="customers-link link"
+                 target="_blank"
+                 rel="noopener noreferrer nofollow">
                  <svg class="customers-icon" width="44" height="41">
                     <use href="./images/icons.svg/sprite_symboldefs.svg#icon-companynext"></use>
                  </svg>
@@ -407,7 +447,10 @@
              </li>
 
              <li class="customers-item">
-              <a href="/" class="customers-link link">
+              <a href="/" 
+                 class="customers-link link"
+                 target="_blank"
+                 rel="noopener noreferrer nofollow">
                  <svg class="customers-icon" width="84" height="41">
                     <use href="./images/icons.svg/sprite_symboldefs.svg#icon-foster"></use>
                  </svg>
@@ -415,7 +458,10 @@
              </li>
 
              <li class="customers-item">
-              <a href="/" class="customers-link link">
+              <a href="/" 
+                 class="customers-link link"
+                 target="_blank"
+                 rel="noopener noreferrer nofollow">
                  <svg class="customers-icon" width="63" height="45">
                     <use href="./images/icons.svg/sprite_symboldefs.svg#icon-brand"></use>
                  </svg>
@@ -423,7 +469,10 @@
              </li>
 
              <li class="customers-item">
-              <a href="/" class="customers-link link">
+              <a href="/"
+                 class="customers-link link"
+                 target="_blank"
+                 rel="noopener noreferrer nofollow">
                  <svg class="customers-icon" width="94" height="44">
                     <use href="./images/icons.svg/sprite_symboldefs.svg#icon-tagline"></use>
                  </svg>
@@ -431,12 +480,12 @@
              </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 <!---------------- FOOTER SECTION --------------------->
-<!-- <footer class="footer-block">
+  <footer class="footer-block">
    <div class="footer-container container">
-     <div>
+     <div class="footer-bl">
        <a class="logo-footer logo logo-link-header" href="./index.html">
        <span class="logo-color">Web</span><span class="logo-color-down">Studio</span></a>
        <p class="footer-text">
@@ -445,12 +494,15 @@
        </p>
      </div>
 
-     <div>
+     <div class="footer-sicial-block">
       <h3 class="social-text footer-text">Social media</h3>
 
       <ul class="footer-social-list list">
         <li class="footer-sicial-item">
-          <a href="/" class="footer-social-link link"
+          <a href="/"
+             class="footer-social-link link"
+             target="_blank"
+						 rel="noopener noreferrer nofollow"
             ><svg class="footer-social-icon" width="24" height="24">
               <use href="./images/icons.svg/sprite_symboldefs.svg#icon-instagram"></use>
             </svg>
@@ -458,7 +510,10 @@
         </li>
 
         <li class="footer-sicial-item">
-          <a href="/" class="footer-social-link link"
+          <a href="/"
+             class="footer-social-link link"
+             target="_blank"
+						 rel="noopener noreferrer nofollow"
             ><svg class="footer-social-icon" width="24" height="24">
               <use href="./images/icons.svg/sprite_symboldefs.svg#icon-twitter"></use>
             </svg>
@@ -466,7 +521,10 @@
         </li>
 
         <li class="footer-sicial-item">
-          <a href="/" class="footer-social-link link"
+          <a href="/"
+             class="footer-social-link link"
+             target="_blank"
+						 rel="noopener noreferrer nofollow"
             ><svg class="footer-social-icon" width="24" height="24">
               <use href="./images/icons.svg/sprite_symboldefs.svg#icon-facebook"></use>
             </svg>
@@ -474,17 +532,19 @@
         </li>
 
         <li class="footer-sicial-item">
-          <a href="/" class="footer-social-link link"
+          <a href="/"
+             class="footer-social-link link"
+             target="_blank"
+						 rel="noopener noreferrer nofollow"
             ><svg class="footer-social-icon" width="24" height="24">
               <use href="./images/icons.svg/sprite_symboldefs.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div>
+     </div>
 
-
-      <div class="form-group subscribe-title">
+     <div class="form-group subscribe-title">
         <h3 class="social-text footer-text">Subscribe</h3>
 
         <form class="subscribe-container">
@@ -504,10 +564,8 @@
        </div>
 
   </div>
-</footer> -->
-
+  </footer>
 <!---------------- MODAL WINDOW --------------------->
-
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
 
@@ -584,5 +642,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

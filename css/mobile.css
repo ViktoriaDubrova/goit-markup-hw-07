@@ -1,25 +1,40 @@
 @media screen and (min-width: 480px) {
-    
+/* --- HEADER ---  */
     .container {
         max-width: 428px;
-        margin: 0;
+        padding: 0 16px;
     }
 
-    .employees-section {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-    
-    .about {
-        padding-top: 96px;
-        padding-bottom: 96px;
+	.burger-link {
+		font-size: 36px;
+	}
+
+	.burger-tel {
+		font-size: 36px;
+	}
+
+	.burger-mail {
+		font-size: 20px;
+	}
+/* --- HEADER ---  */
+
+/* ---  MODAL WINDOW  --- */
+        .modal {
+            width: 408px;
+        }
+/* ---  MODAL WINDOW  --- */
+}
+
+@media screen and (max-width: 767px) {
+    .about-item:not(:last-child) {
+        width: 100%;
+        margin-bottom: 72px;
     }
 
-    .wrapper {
-        padding: 122px 54px 240px 54px;
+    .about-container {
+        width: 396px;
+        margin-right: 0;
     }
 
-    .hero-text {  
-        font-size: 36px;
-    }
+
 }
