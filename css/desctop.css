@@ -233,5 +233,9 @@
 .footer-block {
     padding-right: 0;
 }
+
+.subscribe-btn {
+    height: 40px;
+}
 /* ---  FOOTER SECTION  --- */
 }

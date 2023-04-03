@@ -107,10 +107,23 @@ a, li {
     color: var(--color-link);
 }
 
+.header-contact,
+.contact-item,
+.mail-tel {
+    display: none;
+}
+
+/* 
 .header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+} */
+
+.header .container {
+    max-width: 428px;
+    padding: 0 16px;
+    height: 70px;
 }
 
 .header-navigation {
@@ -118,10 +131,10 @@ a, li {
     align-items: center;
 }
 
-.email-tel-position {
+/* .email-tel-position {
     display: flex;
     flex-direction: row-reverse;  
-}
+} */
 
 .logo-link-header {
     font-weight: 800;
@@ -468,22 +481,21 @@ a, li {
 
 /* --- ABOUT SECTION ---  */
 .about {
-    padding-bottom: 0;
-  
+    padding-bottom: 0; 
 }
 
 .about .container {
     margin-left: 0;
-    margin-top: 96px;
-    margin-bottom: 96px;
-}
-  
-.about-list {
-    margin-left: 0;   
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .about-item {
     width: 100%;
+}
+
+.about-list {
+    margin-left: 0;   
 }
 
 .about-name {
@@ -750,6 +762,29 @@ a, li {
 }
 
 .subscribe-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+   
+    margin: 0 auto;
+   
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+   
+    color: var(--hero-title-text-color);
+    background-color: var(--color-link);
+   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .subscribe-btn {
     position: absolute;
     min-width: 165px;
     max-height: 40px;
@@ -759,7 +794,7 @@ a, li {
     align-items: center;
     margin-left: 114px;
     margin-right: auto;
-}
+} */
 
 .subscribe-btn::after {
     content: "";

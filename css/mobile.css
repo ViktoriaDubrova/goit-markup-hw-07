@@ -1,8 +1,9 @@
 @media screen and (min-width: 480px) {
 /* --- HEADER ---  */
-    .container {
+    .header .container {
         max-width: 428px;
         padding: 0 16px;
+        height: 70px;
     }
 
 	.burger-link {
