@@ -472,9 +472,10 @@ a, li {
   
 }
 
-.about-container {
+.about .container {
     margin-left: 0;
     margin-top: 96px;
+    margin-bottom: 96px;
 }
   
 .about-list {
