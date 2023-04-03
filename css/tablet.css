@@ -238,6 +238,10 @@
     .logo-footer {
         padding: 0;
     }
+
+    .subscribe-btn {
+        height: 40px;
+    }
 /* ---  FOOTER SECTION  --- */
 
 
@@ -251,8 +255,25 @@
     }
 /* ---  MODAL WINDOW  --- */
 
+/* ---  BTN SECTION  --- */
+.btn-section {
+	padding: 64px 0 96px;
+}
 
+.btn-list {
+    min-width: 768px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 64px;
+}
 
+.img-sect-list {
+    column-gap: 24px;
+}
+
+.img-list {
+    width: calc((100% - 24px) / 2);
+}
 
 
 }

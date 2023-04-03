@@ -25,26 +25,111 @@
 <header class="header">
   <div class="container">
     <nav class="header-navigation">
-         <a class="logo logo-link-header" href="./index.html">
-         <span class="logo-color">Web</span>Studio</a>
-    
-    <ul class="header-list list">
-         <li class="header-item">
-             <a class="item-nav link" href="./index.html">Studio</a>
-         </li>        
-         <li class="header-item">
-             <a  class="item-nav link active" href="./portfolio.html">Portfolio</a>
-         </li>
-         <li class="header-item">
-             <a  class="item-nav link" href="">Contacts</a>
-         </li>
-    </ul>
+     <a class="logo logo-link-header" href="./index.html">
+      <span class="logo-color">Web</span>Studio</a>
+
+      <ul class="header-list list">
+        <li class="header-item">
+            <a class="item-nav link" href="./index.html">Studio</a>
+        </li>        
+        <li class="header-item">
+            <a  class="item-nav link  active" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="header-item">
+            <a  class="item-nav link" href="">Contacts</a>
+        </li>
+     </ul>
     </nav>
-       <ul class="header-contact list">
-      <li><a class="mail-tel link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a class="mail-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-    </ul>
+
+    <ul class="header-contact list">
+      <li class="contact-item">
+        <a class="mail-tel"
+        href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      <li class="contact-item">
+        <a class="mail-tel"
+        href="tel:+110001111111">+11 (000) 111-11-11</a>
+       </li>
+     </ul>
+<!------------------- BURGER MENU --------------------------->
+    <button type="button" 
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+
+      <svg class="burger-icon-open" width="32" height="22">
+        <use href="./images/icons.svg/sprite_symboldefs.svg#icon-icon-menu"></use>
+      </svg>
+    </button>
   </div>
+
+ <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle-close js-close-menu">
+      <svg class="modal-icon" width="8" height="8">
+        <use href="./images/icons.svg/sprite_symboldefs.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <nav class="burger-navigation">
+      <ul class="burger-list list">
+        <li class="burger-item">
+            <a class="burger-link current link active" href="./index.html">Studio</a>
+        </li>        
+        <li class="burger-item">
+            <a  class="burger-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="burger-item">
+            <a  class="burger-link link" href="">Contacts</a>
+        </li>
+     </ul>
+    </nav>
+
+    <ul class="burger-contact list">
+      <li class="burger-contact-item">
+        <a href="tel:+110001111111" class="burger-tel link"
+          >+11 (000) 111-11-11</a
+        >
+      </li>
+      <li class="burger-contact-item">
+        <a href="mailto:info@devstudio.com" class="burger-mail link"
+          >info@devstudio.com</a>
+      </li>
+    </ul>
+
+    <ul class="team-icon-list list">
+          <li class="team-sicial-item">
+            <a href="/" class="team-social-link link">
+            <svg class="" width="16" height="16">
+            <use href="./images/icons.svg/sprite_symboldefs.svg#icon-instagram"></use>
+            </svg>
+            </a>
+          </li>
+
+          <li class="team-sicial-item">
+           <a href="/" class="team-social-link link">
+           <svg class="" width="16" height="16">
+           <use href="./images/icons.svg/sprite_symboldefs.svg#icon-twitter"></use>
+           </svg>
+           </a>
+         </li>
+
+         <li class="team-sicial-item">
+           <a href="/" class="team-social-link link">
+           <svg class="" width="16" height="16">
+           <use href="./images/icons.svg/sprite_symboldefs.svg#icon-facebook"></use>
+           </svg>
+           </a>
+         </li>
+
+         <li class="team-sicial-item">
+           <a href="/" class="team-social-link link">
+           <svg class="" width="16" height="16">
+           <use href="./images/icons.svg/sprite_symboldefs.svg#icon-linkedin"></use>
+           </svg>
+           </a>
+         </li>
+      </ul>
+    </div>
  </header>
 <main>
 <!----------------- BTN SECTION -----------------------> 
@@ -262,7 +347,7 @@
 <!---------------- FOOTER SECTION --------------------->
 <footer class="footer-block">
   <div class="footer-container container">
-    <div>
+    <div class="footer-bl">
       <a class="logo-footer logo logo-link-header" href="./index.html">
       <span class="logo-color">Web</span><span class="logo-color-down">Studio</span></a>
       <p class="footer-text">
@@ -271,12 +356,15 @@
       </p>
     </div>
 
-    <div>
+    <div class="footer-sicial-block">
      <h3 class="social-text footer-text">Social media</h3>
 
      <ul class="footer-social-list list">
        <li class="footer-sicial-item">
-         <a href="/" class="footer-social-link link"
+         <a href="/"
+            class="footer-social-link link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
            ><svg class="footer-social-icon" width="24" height="24">
              <use href="./images/icons.svg/sprite_symboldefs.svg#icon-instagram"></use>
            </svg>
@@ -284,7 +372,10 @@
        </li>
 
        <li class="footer-sicial-item">
-         <a href="/" class="footer-social-link link"
+         <a href="/"
+            class="footer-social-link link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
            ><svg class="footer-social-icon" width="24" height="24">
              <use href="./images/icons.svg/sprite_symboldefs.svg#icon-twitter"></use>
            </svg>
@@ -292,7 +383,10 @@
        </li>
 
        <li class="footer-sicial-item">
-         <a href="/" class="footer-social-link link"
+         <a href="/"
+            class="footer-social-link link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
            ><svg class="footer-social-icon" width="24" height="24">
              <use href="./images/icons.svg/sprite_symboldefs.svg#icon-facebook"></use>
            </svg>
@@ -300,17 +394,19 @@
        </li>
 
        <li class="footer-sicial-item">
-         <a href="/" class="footer-social-link link"
+         <a href="/"
+            class="footer-social-link link"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
            ><svg class="footer-social-icon" width="24" height="24">
              <use href="./images/icons.svg/sprite_symboldefs.svg#icon-linkedin"></use>
            </svg>
          </a>
        </li>
      </ul>
-   </div>
+    </div>
 
-
-     <div class="form-group subscribe-title">
+    <div class="form-group subscribe-title">
        <h3 class="social-text footer-text">Subscribe</h3>
 
        <form class="subscribe-container">
@@ -330,7 +426,7 @@
       </div>
 
  </div>
-</footer>
+ </footer>
 
   </body>
 </html>
