@@ -683,8 +683,49 @@ a, li {
 	margin: 0 auto 16px;
 }
 
+.logo-footer .logo-color,
+.logo-footer .logo-color-down {
+	font-family: var(--secondaty-font);
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.logo-footer .logo-color {
+	color: var(--color-link);
+}
+
+.logo-footer .logo-color-down {
+	color: #f4f4fd;
+}
+
+.logo-footer:focus {
+	color: var(--ocean);
+}
+
+.footer-text {
+    color: var(--color-text);
+}
+
+.footer-sicial-block {
+	margin-bottom: 72px;
+}
+
+.social-text {
+    margin-bottom: 16px;
+    text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+    color: #FFFFFF;
+}
+
 .footer-social-list {
 	display: flex;
+	max-width: 208px;
+	margin: 0 auto;
 	gap: 16px;
 }
 
@@ -700,6 +741,7 @@ a, li {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
+    outline: none;
 	background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-duration);
 }
@@ -709,72 +751,21 @@ a, li {
 	background-color: var(--success-color);
 }
 
-
-
-.cont-footer-logo {
-    margin-right: 120px;
-    /* outline: 4px solid green; */
-} 
-
-.footer-text { 
-    color: var(--color-text); 
-    max-width: 264px; 
-}
-
-.social-text {
-    font-family: inherit;
-    font-weight: 500;
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
-
-.icon {  
-    background: rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    content: "";
-    height: 40px;
-    width: 40px;
-    border-radius: 50% 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 8px;
-        /* outline: 1px solid yellow; */
-}
-
-.logo-color-down {
-    color: #F4F4FD;
-}
-
-
-
-.footer-container{ 
-    display: flex; 
-    gap: 120px; 
-}
-
-.form-group {
-    position: inherit;
-    Width: 453px;
-    Height: 80px;
-    /* outline: 2px solid salmon; */
-}
-
-.for-label .subscribe-label {
-    width: 264px;
-    height: 40px;
-    background-color: var(--brand-color);
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-}
-
 .subscribe-label {
-    color: #FFFFFF;
-    resize: none;
-    padding-left: 16px;
-    border: 1px solid var(--hero-title-text-color);
+    width: 100%;
+	height: 40px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	background-color: var(--brand-color);
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: rgba(255, 255, 255, 0.6);
+	outline: none;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input .subscribe-label{
@@ -786,7 +777,7 @@ a, li {
 }
 
 .subscribe-btn {
-    /* position: absolute; */
+    position: absolute;
     min-width: 165px;
     max-height: 40px;
     text-decoration: none;
@@ -805,12 +796,58 @@ a, li {
     background-size: contain;
     background-repeat: no-repeat;
 }
+/* ---  FOOTER SECTION  --- */
+---------
+/* .subscribe-btn {
+    position: absolute;
+    min-width: 165px;
+    max-height: 40px;
+    text-decoration: none;
+    display: inline-flex;
+    background-color: var(--color-link);
+    align-items: center;
+    margin-left: 24px;
+} */
 
-.subscribe-container {
+/* .cont-footer-logo {
+    margin-right: 120px;
+}  */
+
+/* .icon {  
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8px;
+} */
+
+/* 
+.footer-container{ 
+    display: flex; 
+    gap: 120px; 
+} */
+
+/* .form-group {
+    position: inherit;
+    Width: 453px;
+    Height: 80px;
+} */
+
+/* .for-label .subscribe-label {
+    width: 264px;
+    height: 40px;
+    background-color: var(--brand-color);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+} */
+
+/* .subscribe-container {
     display: flex;
-
-    /* outline: 2px solid yellow; */
-}
+} */
 
 /* ---  BTN SECTION  --- */
 .btn-section {
