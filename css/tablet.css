@@ -10,16 +10,36 @@
 	}
 
 	.header .container {
+        height: 72px;
 		display: flex;
 		align-items: center;
 	}
 
-    .header-list {
-        margin-left: 76px;
-        display: flex;  
-        gap: 40px;   
+    .logo .logo-link-header {
+        margin-top: 0;
     }
 
+    .header-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    /* .header-list {
+        margin-left: 76px;
+        padding-left: 120px;
+        padding-top: 24px;
+        margin: 0;
+        display: flex;  
+        gap: 40px;   
+    } */
+
+    .header-list {
+		display: flex;
+        padding-right: 120px;
+		margin-left: 76px;
+		gap: 40px;
+	}
+    
     .item-nav {
         position: relative;
         font-weight: 500;

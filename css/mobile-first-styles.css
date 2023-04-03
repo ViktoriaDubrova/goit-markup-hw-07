@@ -107,51 +107,49 @@ a, li {
     color: var(--color-link);
 }
 
-.header-contact,
-.contact-item,
-.mail-tel {
-    display: none;
+@media screen and (max-width: 767px) {
+    .header-contact,
+    .contact-item,
+    .header-list,
+    .mail-tel {
+        display: none;
+    }
 }
 
-/* 
 .header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-.header .container {
-    max-width: 428px;
+	display: flex;
+	justify-content: space-between;
     padding: 0 16px;
-    height: 70px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .header-navigation {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
-/* .email-tel-position {
-    display: flex;
-    flex-direction: row-reverse;  
+/* .header .container {
+    max-width: 428px;
+    padding: 0 16px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
 } */
 
 .logo-link-header {
+    padding: 24px 0;
+    font-size: 18px;
     font-weight: 800;
-    line-height: 1.17;  
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
+	line-height: 1.33;  
+    /* display: flex; */
+    /* align-items: center; */
+    /* letter-spacing: 0.03em; */
     text-transform: uppercase;
 }
 
 .logo-link-header:focus {
 	color: var(--accent-color);
-}
-
-.header-list,
-.header-contact {
-	display: none;
 }
 
 .logo {
@@ -162,7 +160,7 @@ a, li {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 } 
 
 .logo-color {
@@ -170,6 +168,130 @@ a, li {
     list-style: none;
     text-decoration: none;
 }
+/* 
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* .header-list {
+    margin-left: 76px;
+    display: flex;
+    flex-direction: row;    
+    gap: 40px;   
+} */
+
+/* .email-tel-position {
+    display: flex;
+    flex-direction: row-reverse;  
+} */
+
+/* .header-item {
+    list-style: none;
+    text-decoration: none;
+} */
+
+/* .header-item:not(:last-child) {    
+    margin-bottom: 40px;
+} */
+
+/* .header-contact {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;   
+} */
+
+/* .contact-item:not(:first-child) {
+    margin-left: 40px;
+} */
+
+/* .item-nav {
+     position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    padding: 24px 0;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+} */
+
+/* .item-nav.active {
+    color: var(--ocean);
+} */
+
+/* .item-nav.active::after {
+    content: "";
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
+    bottom: -3px;
+} */
+
+/* .mail-tel {
+    font-style: normal;
+    color: var(--description-tel-mail-color);
+    gap: 40px;
+    padding: 24px 0;
+    transition: color var(--transition-duration);
+} */
+
+/* .mail-tel:hover {
+    color: var(--color-link);
+} */
+
+/* .header-btn-mobile {
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+} */
+
+/* .header-nav-wrap {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 40px;
+    padding-top: 80px;
+} */
+
+/* .header-btn-mobile-close {
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+} */
+
+/* .header-btn-mobile-close:hover,
+.header-btn-mobile-close:focus {
+    background-color: var(--ocean);
+} */
+
+/* .header-icon {
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 48px;
+} */
 
 /* --- BURGER MENU --- */
 
@@ -285,119 +407,10 @@ a, li {
 	color: #434455;
 }
 
-/* .header-list {
-    margin-left: 76px;
-    display: flex;
-    flex-direction: row;    
-    gap: 40px;   
-} */
-
-.header-item {
-    list-style: none;
-    text-decoration: none;
+.burger-link.current {
+	color: var(--color-link);
 }
-
-.header-item:not(:last-child) {    
-    margin-bottom: 40px;
-}
-
-.header-contact {
-    display: flex;
-    margin-left: auto;
-    gap: 40px;   
-    margin-top: 224px;
-}
-
-.contact-item:not(:first-child) {
-    margin-left: 40px;
-}
-
-.item-nav {
-    /* position: relative; */
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 500;
-    list-style: none;
-    padding: 24px 0;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-}
-
-.item-nav.active {
-    color: var(--ocean);
-}
-
-/* .item-nav.active::after {
-    content: "";
-
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--ocean);
-    border-radius: 2px;
-    bottom: -3px;
-} */
-
-.mail-tel {
-    font-style: normal;
-    color: var(--description-tel-mail-color);
-    gap: 40px;
-    padding: 24px 0;
-    transition: color var(--transition-duration);
-}
-
-.mail-tel:hover {
-    color: var(--color-link);
-}
-
-.header-btn-mobile {
-    position: absolute;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
-
-.header-nav-wrap {
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-left: 40px;
-    padding-top: 80px;
-}
-
-.header-btn-mobile-close {
-    position: absolute;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color var(--transition-duration);
-}
-
-.header-btn-mobile-close:hover,
-.header-btn-mobile-close:focus {
-    background-color: var(--ocean);
-}
-
-.header-icon {
-    position: absolute;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    margin-top: 48px;
-}
+/* --- BURGER MENU --- */
 /* --- HEADER ---  */
 
 

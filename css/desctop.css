@@ -6,12 +6,12 @@
         padding-right: 156px;
     }
 
-    .section {
-        padding: 120px 0;
+    .header .container {
+        padding: 0 156px;
     }
 
     .header-contact {
-		display: flex;
+		display: inline;
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-left: auto;
@@ -25,12 +25,6 @@
 		padding: 24px 0;
     }
 
-    .header-list {
-        margin-left: 76px;
-        display: flex;
-        flex-direction: row;    
-        gap: 40px;   
-    }
 /* --- HEADER ---  */
 
 
