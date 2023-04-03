@@ -38,7 +38,6 @@
     .wrapper {
         max-width: 1440px;
         max-height: 600px;
-        padding: 188px 0;
         background-image:  linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -68,6 +67,11 @@
 /* --- ABOUT SECTION ---  */
     .about {
         padding: 120px 0;
+    }
+
+    .about .container {
+        padding-left: 70px;
+        padding-right: 40px;
     }
 
     .about-list {
@@ -123,43 +127,44 @@
 
 
 /* ---  WORKING  --- */
-    .section .what-section {
-        display: block;
-        padding-top: 0;
-    }
+.what-section {
+    text-align: center;
+    color: var(--brand-color);
+}
 
-    .what-section {
-        text-align: center;
-    }
+.section-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 72px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--brand-color);
+}
 
-    .section-name {
-        margin-bottom: 72px;
-		font-size: 36px;
-		line-height: 1.1;
-		letter-spacing: 0.02em;
-		text-transform: capitalize;
-		font-weight: 700;
-    }
+.working-list {
+    display: flex;
+    gap: 24px;
+}
 
-    .working-list {
-		display: flex;
-		gap: 24px;
-	}
+.working-item {
+    width: calc((100%-48px) / 3);
+    max-width: 360px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
-    .working-item {
-		width: calc((100%-48px) / 3);
-		max-width: 360px;
-	}
-
-    .working-list .container {
-		background: linear-gradient(
-			0deg,
-			rgba(77, 90, 229, 0.1),
-			rgba(77, 90, 229, 0.1)
-		);
-		background-blend-mode: soft-light, normal;
-		border: 1px solid #e7e9fc;
-	}
+.working-list .container {
+    background: linear-gradient(
+      0deg,
+      rgba(77, 90, 229, 0.1),
+      rgba(77, 90, 229, 0.1)
+    );
+    background-blend-mode: soft-light, normal;
+    border: 1px solid var(--primary-border-color);
+}
 /* ---  WORKING  --- */
 
 
@@ -179,8 +184,9 @@
 
 
 /* ---  Customers SECTION  --- */
-.customers-section {
-    padding: 120px 0;
+
+.customers-section .container {
+    padding: 0;
 }
 
 .customers-item {
@@ -190,6 +196,11 @@
 
 .customers-item:nth-child(n + 1) {
     margin-bottom: 0;
+}
+
+.customers-list {
+	display: flex;
+	gap: 24px;
 }
 /* ---  Customers SECTION  --- */
 
@@ -201,6 +212,8 @@
 
 .footer-block .container {
     flex-wrap: nowrap;
+    margin: 0;
+    padding-left: 56px;
 }
 
 .footer-bl {
@@ -211,6 +224,14 @@
 .footer-sicial-block {
     margin-right: 80px;
     margin-bottom: 0;
+}
+
+.logo-footer {
+	padding: 0;
+}
+
+.footer-block {
+    padding-right: 0;
 }
 /* ---  FOOTER SECTION  --- */
 }

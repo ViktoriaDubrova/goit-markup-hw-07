@@ -97,8 +97,14 @@
 
 /* --- ABOUT SECTION ---  */
     .about {
+        margin-top: 0;
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+    
+    .about .container {
+        margin-left: 0;
+        margin-top: 0;
     }
 
 	.about-list {
@@ -109,6 +115,7 @@
 
     .about-item {
 		max-width: 356px;
+        padding-bottom: 72px;
 	}
 
 	.about-item:not(:last-child) {
@@ -121,6 +128,7 @@
 
     .about-name {
         text-align: start;
+        margin-top: 0;
     }
 /* --- ABOUT SECTION ---  */
 
@@ -200,6 +208,15 @@
     .subscribe-label {
         width: 264px;
         margin-bottom: 0;
+    }
+
+    .subscribe-btn {
+        margin-left: 300px;
+        margin-right: auto;
+    }
+
+    .logo-footer {
+        padding: 0;
     }
 /* ---  FOOTER SECTION  --- */
 

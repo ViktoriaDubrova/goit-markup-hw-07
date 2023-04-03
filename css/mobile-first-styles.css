@@ -469,10 +469,16 @@ a, li {
 /* --- ABOUT SECTION ---  */
 .about {
     padding-bottom: 0;
+  
+}
+
+.about-container {
+    margin-left: 0;
+    margin-top: 96px;
 }
   
 .about-list {
-    width: 396px;
+    margin-left: 0;   
 }
 
 .about-item {
@@ -501,47 +507,13 @@ a, li {
 
 
 /* ---  WORKING  --- */
-.section .what-section {
-    display: none;
-}
-
-.what-section {
-    text-align: center;
-    color: var(--brand-color);
-}
-
-.section-name {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    margin-bottom: 72px;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    color: var(--brand-color);
-}
-
-.working-list {
-    display: flex;
-    gap: 24px;
-}
-
-.working-item {
-    width: calc((100%-48px) / 3);
-    max-width: 360px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.working-list .container {
-    background: linear-gradient(
-      0deg,
-      rgba(77, 90, 229, 0.1),
-      rgba(77, 90, 229, 0.1)
-    );
-    background-blend-mode: soft-light, normal;
-    border: 1px solid var(--primary-border-color);
+@media screen and (max-width: 1199px) {
+    .container .what-section,
+    .section-name,
+    .working-list,
+    .working-item {
+        display: none;
+    }
 }
 
 /* ---  EMPLOYEES SECTION  --- */
@@ -616,7 +588,7 @@ a, li {
 /* ---  Customers SECTION  --- */
 .customers-section {
     padding: 96px 0;
-    /* width: 100%; */
+
 }
 
 .section-name {
@@ -781,10 +753,11 @@ a, li {
     min-width: 165px;
     max-height: 40px;
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     background-color: var(--color-link);
     align-items: center;
-    margin-left: 24px;
+    margin-left: 114px;
+    margin-right: auto;
 }
 
 .subscribe-btn::after {
