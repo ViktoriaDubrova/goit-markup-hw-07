@@ -1,41 +1,33 @@
 @media screen and (min-width: 480px) {
-/* --- HEADER ---  */
-    .header .container {
-        /* max-width: 428px; */
-        padding: 0 16px;
-        height: 70px;
-    }
+  /* --- HEADER ---  */
+  .header .container {
+    padding: 0 16px;
+    height: 70px;
+  }
 
-	.burger-link {
-		font-size: 36px;
-	}
+  .burger-link {
+    font-size: 36px;
+  }
 
-	.burger-tel {
-		font-size: 36px;
-	}
+  .burger-tel {
+    font-size: 36px;
+  }
 
-	.burger-mail {
-		font-size: 20px;
-	}
-/* --- HEADER ---  */
+  .burger-mail {
+    font-size: 20px;
+  }
+  /* --- HEADER ---  */
 
-/* ---  MODAL WINDOW  --- */
-        .modal {
-            width: 408px;
-        }
-/* ---  MODAL WINDOW  --- */
+  /* ---  MODAL WINDOW  --- */
+  .modal {
+    width: 408px;
+  }
+  /* ---  MODAL WINDOW  --- */
 }
 
 @media screen and (max-width: 767px) {
-    .about-item:not(:last-child) {
-        width: 100%;
-        margin-bottom: 72px;
-    }
-
-    /* .about-container {
-        width: 396px;
-        margin-right: 0;
-    } */
-
-
+  .about-item:not(:last-child) {
+    width: 100%;
+    margin-bottom: 72px;
+  }
 }
