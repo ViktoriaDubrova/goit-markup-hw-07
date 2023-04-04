@@ -199,12 +199,12 @@
 
   /* ---  FOOTER SECTION  --- */
 
-  .footer-block .container {
+  /* .footer-block .container {
     flex-wrap: nowrap;
     margin: 0 auto;
     padding-left: 56px;
     padding-right: 56px;
-  }
+  } */
 
   .footer-bl {
     margin-right: 100px;
