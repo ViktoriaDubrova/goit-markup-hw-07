@@ -482,8 +482,9 @@ li {
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  column-gap: 16px;
 }
 
 .customers-item {
@@ -491,7 +492,7 @@ li {
 	height: 88px;
 }
 
-.customers-item:nth-child(-n + 4) {
+.customers-item:nth-child(-n + 5) {
   margin-bottom: 72px;
 }
 
