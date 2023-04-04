@@ -492,7 +492,7 @@ li {
 	height: 88px;
 }
 
-.customers-item:nth-child(-n + 5) {
+.customers-item:nth-child(-n + 4) {
   margin-bottom: 72px;
 }
 
