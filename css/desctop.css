@@ -178,8 +178,8 @@
 
   /* ---  Customers SECTION  --- */
 
-  .customers-section .container {
-    padding: 0;
+  .customers-section {
+    padding: 120px 0;
   }
 
   .customers-item {
@@ -221,6 +221,8 @@
   }
 
   .footer-block {
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-right: 0;
   }
 

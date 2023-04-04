@@ -124,11 +124,6 @@
         padding-top: 96px;
         padding-bottom: 96px;
     }
-    
-    .about .container {
-        margin-left: 0;
-        margin-top: 0;
-    }
 
 	.about-list {
 		display: flex;
@@ -254,7 +249,7 @@
 
 /* ---  BTN SECTION  --- */
 .btn-section {
-    padding-top: 96px;
+    padding-top: 64px;
     padding-bottom: 96px;
 }
 
