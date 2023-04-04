@@ -1,7 +1,7 @@
 @media screen and (min-width: 480px) {
 /* --- HEADER ---  */
     .header .container {
-        max-width: 428px;
+        /* max-width: 428px; */
         padding: 0 16px;
         height: 70px;
     }

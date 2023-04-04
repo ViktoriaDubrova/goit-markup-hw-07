@@ -89,13 +89,15 @@ a, li {
 	}
 }
 
-/* .section {
+.section {
     padding-top: 96px;
     padding-bottom: 96px;
-} */
+}
 
 /* --- HEADER ---  */
 .header {
+    /* padding-top: 96px;
+    padding-bottom: 96px; */
     color: var(--hero-title-text-color);
     background-color: var(--hero-title-text-color);
     border-bottom: 1px solid var(--color-text);
@@ -114,14 +116,16 @@ a, li {
     .mail-tel {
         display: none;
     }
+
+    .wrapper {
+        padding: 112px 0;
+    }
 }
 
 .header .container {
 	display: flex;
 	justify-content: space-between;
     padding: 0 16px;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .header-navigation {
@@ -323,6 +327,7 @@ a, li {
 	z-index: 999;
 	overflow-y: scroll;
 	transform: translateX(100%);
+    transition: transform var(--transition-duration);
 }
 
 .menu-container.is-open {
@@ -446,8 +451,6 @@ a, li {
 }
 
 .hero-container {
-    padding-left: 0;
-    padding-right: 0;
     margin-left: 0;
     margin-right: 0;
 }
@@ -494,13 +497,13 @@ a, li {
 
 /* --- ABOUT SECTION ---  */
 .about {
-    padding-bottom: 0; 
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .about .container {
     margin-left: 0;
-    padding-top: 96px;
-    padding-bottom: 96px;
+
 }
 
 .about-item {
@@ -508,7 +511,8 @@ a, li {
 }
 
 .about-list {
-    margin-left: 0;   
+    margin-left: 0;  
+    gap: 72px 24px; 
 }
 
 .about-name {
@@ -535,7 +539,7 @@ a, li {
 /* ---  WORKING  --- */
 @media screen and (max-width: 1199px) {
     .container .what-section,
-    .section-name,
+    .what,
     .working-list,
     .working-item {
         display: none;
@@ -546,8 +550,8 @@ a, li {
 .employees-section {
     /* width: 100%; */
     background-color: var(--bg-btn-foot-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .empl-content-p {
@@ -564,7 +568,7 @@ a, li {
 .empl-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
 }
 
 .team-icon-list {
@@ -614,7 +618,6 @@ a, li {
 /* ---  Customers SECTION  --- */
 .customers-section {
     padding: 96px 0;
-
 }
 
 .section-name {
@@ -633,7 +636,7 @@ a, li {
 }
 
 .customers-item {
-	width: calc((100% - 16px) / 2);
+	width: 190px;
 	height: 88px;
 }
 
@@ -871,18 +874,16 @@ a, li {
     display: flex;
 } */
 
-/* ---  BTN SECTION  --- */
-.btn-section {
-	padding: 48px 0;
-}
+ 
 
 .btn-list {
-	min-width: 270px;
-	display: flex;
+	width: 263px;
+    height: 96px;
+	display: inline-block;
 	flex-wrap: wrap;
-	gap: 24px;
-    margin-top: 48px;
-	margin-bottom: 48px;
+	/* gap: 24px; */
+    /* margin-top: 48px;
+	margin-bottom: 48px; */
 }
 
 .btn {
@@ -929,6 +930,10 @@ a, li {
 }
 
 /* ---  IMG SECTION  --- */
+.btn-section {
+    padding: 48px 16px;
+}
+
 .img-sect-list {
 	display: flex;
 	flex-wrap: wrap;

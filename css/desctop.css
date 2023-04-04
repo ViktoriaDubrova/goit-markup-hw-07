@@ -2,13 +2,18 @@
 /* --- HEADER ---  */
     .container {
         max-width: 1158px;
-        padding-left: 156px;
-        padding-right: 156px;
+        /* padding-left: 156px;
+        padding-right: 156px; */
     }
 
-    .header .container {
-        padding: 0 156px;
+    .section .header{
+        padding-top: 156px;
+        padding-bottom: 156px;
     }
+
+    /* .header .container {
+        padding: 0 156px;
+    } */
 
     
     .header-contact {
@@ -23,11 +28,11 @@
 		margin-left: 40px;
 	} */
 
-    .contact-item {
+    /* .contact-item {
         box-sizing: content-box;
         flex-direction: row;
         gap: 40px; 
-    }
+    } */
 
     .mail-tel {
 		padding: 24px 0;
@@ -40,7 +45,7 @@
     }
 
     .header-list {
-        margin-left: 76px;
+        /* margin-left: 76px; */
         display: flex;
         flex-direction: row;    
         gap: 40px;   
@@ -91,7 +96,6 @@
 
     .about-list {
 		flex-wrap: nowrap;
-        gap: 24px;
 	}
 
     .about-name {
@@ -145,6 +149,7 @@
     .what-section {
         text-align: center;
         color: var(--brand-color);
+        padding-bottom: 120px;
     }
 
     .section-name {
@@ -184,7 +189,7 @@
 
 
 /* ---  EMPLOYEES SECTION  --- */
-    .employees-section .container {
+    .employees-section {
 		padding: 120px 0;
     }
 

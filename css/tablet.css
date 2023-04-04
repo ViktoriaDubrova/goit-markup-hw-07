@@ -4,6 +4,11 @@
         max-width: 768px;
     }
 
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
     .menu-container,
 	.menu-toggle {
 		display: none;
@@ -35,7 +40,7 @@
 
     .header-list {
 		display: flex;
-        padding-right: 120px;
+        padding-right: 96px;
 		margin-left: 76px;
 		gap: 40px;
 	}
@@ -63,8 +68,8 @@
 
 	.header-contact {
 		display: block;
-		margin-top: 24px;
-		margin-bottom: 10px;
+		/* margin-top: 24px;
+		margin-bottom: 10px; */
 	}
 
     .mail-tel {
@@ -130,12 +135,10 @@
 	.about-list {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 24px;
 	}
 
     .about-item {
 		max-width: 356px;
-        padding-bottom: 72px;
 	}
 
 	.about-item:not(:last-child) {
@@ -155,7 +158,8 @@
 
 /* ---  EMPLOYEES SECTION  --- */
     .employees-section {
-		padding: 96px 0 104px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .empl-list {
@@ -173,7 +177,7 @@
 	}
 
     .empl-item:nth-child(-n + 2) {
-		margin-bottom: 64px;
+		gap: 64px;
 	}
 /* ---  EMPLOYEES SECTION  --- */
 
@@ -257,11 +261,12 @@
 
 /* ---  BTN SECTION  --- */
 .btn-section {
-	padding: 64px 0 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .btn-list {
-    min-width: 768px;
+    /* min-width: 768px; */
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 64px;
