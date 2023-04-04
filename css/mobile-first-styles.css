@@ -937,7 +937,7 @@ li {
 
 .comment {
   display: block;
-  width: 360px;
+  width: 100%;
   min-height: 120px;
   resize: none;
   padding-top: 8px;
