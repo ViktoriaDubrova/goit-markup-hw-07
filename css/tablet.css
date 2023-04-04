@@ -68,8 +68,6 @@
 
 	.header-contact {
 		display: block;
-		/* margin-top: 24px;
-		margin-bottom: 10px; */
 	}
 
     .mail-tel {
@@ -233,11 +231,6 @@
         width: 264px;
         margin-bottom: 0;
     }
-
-    /* .subscribe-btn {
-        margin-left: 300px;
-        margin-right: auto;
-    } */
 
     .logo-footer {
         padding: 0;
