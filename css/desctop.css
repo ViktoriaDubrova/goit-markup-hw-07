@@ -17,12 +17,31 @@
 		margin-left: auto;
 	}
 
-    .contact-item:not(:first-child) {
+    /* .contact-item:not(:first-child) {
 		margin-left: 40px;
-	}
+	} */
+
+    .contact-item {
+        box-sizing: content-box;
+        flex-direction: row;
+        gap: 40px; 
+    }
 
     .mail-tel {
 		padding: 24px 0;
+    }
+
+    .header-contact {
+        box-sizing: content-box;
+        flex-direction: row;
+        gap: 40px; 
+    }
+
+    .header-list {
+        margin-left: 76px;
+        display: flex;
+        flex-direction: row;    
+        gap: 40px;   
     }
 
 /* --- HEADER ---  */
